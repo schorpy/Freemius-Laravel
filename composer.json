@@ -1,0 +1,22 @@
+{
+    "name": "freemius/laravel",
+    "description": "Laravel package for Freemius Payment Saas",
+    "type": "library",
+    "require": {
+        "php": "~8.2.0|~8.3.0|~8.4.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "laravel/framework": "^11.0|^12.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Freemius\\Laravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "schorpy",
+            "email": "87610109+schorpy@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
