@@ -2,15 +2,17 @@
 
 namespace Freemius\Laravel;
 
-// use Laravel\Paddle\Concerns\ManagesCustomer;
-// use Laravel\Paddle\Concerns\ManagesSubscriptions;
-// use Laravel\Paddle\Concerns\ManagesTransactions;
-// use Laravel\Paddle\Concerns\PerformsCharges;
+use Freemius\Laravel\Concerns\ManagesCheckouts;
+use Freemius\Laravel\Concerns\ManagesCustomer;
+use Freemius\Laravel\Concerns\ManagesLicenses;
+use Freemius\Laravel\Concerns\ManagesOrders;
+use Freemius\Laravel\Concerns\ManagesSubscriptions;
 
 trait Billable
 {
-    // use ManagesCustomer;
-    // use ManagesSubscriptions;
-    // use ManagesTransactions;
-    // use PerformsCharges;
+    use ManagesCheckouts;
+    use ManagesCustomer;
+    use ManagesLicenses;
+    use ManagesOrders;
+    use ManagesSubscriptions;
 }
