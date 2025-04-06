@@ -1,7 +1,15 @@
 {
     "name": "freemius/laravel",
     "description": "Laravel package for Freemius Payment Saas",
-    "type": "library",
+    "keywords": [
+        "laravel",
+        "freemius",
+        "payment",
+        "billing",
+        "saas"
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
     "require": {
         "php": "~8.2.0|~8.3.0|~8.4.0",
         "guzzlehttp/guzzle": "^7.0",
@@ -10,6 +18,13 @@
     "autoload": {
         "psr-4": {
             "Freemius\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Freemius\\Laravel\\FreemiusServiceProvider"
+            ]
         }
     },
     "authors": [
